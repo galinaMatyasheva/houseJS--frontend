@@ -1,0 +1,132 @@
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #48842e; }
+
+.container {
+  margin: 50px auto;
+  width: 1180px; }
+  .container .filter {
+    padding: 70px 0 50px; }
+    .container .filter .filter__input {
+      padding: 0 15px;
+      width: 418px;
+      height: 50px;
+      border: 1px solid #d8d8d8;
+      border-radius: 25px; }
+      .container .filter .filter__input:focus {
+        outline: none; }
+    .container .filter .filter_no-result {
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      color: grey; }
+  .container .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .container .gallery .gallery__card {
+      margin-bottom: 30px;
+      width: 379px;
+      background-color: #f8f8f8;
+      border: 1px solid #d8d8d8;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+      .container .gallery .gallery__card .gallery-card__img-wrap {
+        position: relative;
+        width: 100%;
+        height: 65%; }
+        .container .gallery .gallery__card .gallery-card__img-wrap .gallery-card__img {
+          width: 100%;
+          height: 100%;
+          background-color: #fff; }
+        .container .gallery .gallery__card .gallery-card__img-wrap .gallery-card__house-type {
+          position: absolute;
+          bottom: 5px;
+          right: 0;
+          padding: 2px 0;
+          width: 120px;
+          font-size: 12px;
+          font-weight: 600;
+          text-align: center;
+          color: #fff;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+    .container .gallery .gallery-card__text {
+      padding: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .container .gallery .gallery-card__text .gallery-card__text-title {
+        line-height: 27px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      .container .gallery .gallery-card__text p {
+        line-height: 27px;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .container .gallery .gallery-card__text .gallery-card__text-address {
+        padding-bottom: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .container .gallery .gallery-card__text .gallery-card__text-ownership {
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .container .gallery .gallery-card__text .gallery-card__price {
+        font-weight: 600; }
+  .container .container__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #d8d8d8;
+    border-radius: 25px;
+    background-color: #fff; }
+    .container .container__button:focus {
+      outline: none; }
+    .container .container__button .container-button__i {
+      display: inline-block;
+      padding: 5px;
+      border: solid black;
+      border-width: 0 2px 2px 0; }
+    .container .container__button .container-button_arrow {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg); }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 5%; }
+    .container .gallery .gallery__card {
+      width: 47%; } }
+
+@media screen and (max-width: 920px) {
+  .container .filter {
+    display: flex;
+    flex-direction: column; }
+    .container .filter .filter__label {
+      margin-bottom: 15px; }
+    .container .filter .filter__input {
+      width: 100%; }
+  .container .gallery {
+    justify-content: center; }
+    .container .gallery .gallery__card {
+      width: 100%;
+      height: 100%; } }
